@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090807">
+  <meta name="description" content="FACE TO YOU — Apprends à te comprendre. Un espace pour faire le point, réfléchir et avancer à ton rythme.">
+  <title>FACE TO YOU — Apprends à te comprendre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FACE TO YOU, accueil"><span class="brand-star">✦</span> FACE TO YOU<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active" data-view="home">Accueil</a>
+      <a href="#questionnaires" class="nav-link" data-view="questionnaires">Questionnaires</a>
+      <a href="#results" class="nav-link" data-view="results">Mon bilan</a>
+      <a href="#journal" class="nav-link" data-view="journal">Mon journal</a>
+      <a href="#evolution" class="nav-link" data-view="evolution">Mon évolution</a>
+    </nav>
+    <button class="account-btn" id="accountBtn"><span>♙</span> <span id="accountLabel">Mon espace</span></button>
+  </header>
+
+  <main>
+    <section class="view active-view" id="view-home">
+      <section class="hero wrap">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> UN ESPACE POUR TOI</p>
+          <h1>FACE TO YOU<span class="title-period">.</span></h1>
+          <p class="tagline">APPRENDS À TE COMPRENDRE</p>
+          <p class="hero-text">Fais le point sur toi, comprends ce que tu ressens réellement et construis la personne que tu veux devenir.</p>
+          <div class="hero-actions">
+            <button class="btn btn-cream" data-action="start-global">Commencer le parcours <span>→</span></button>
+            <a class="btn btn-outline" href="#about">Découvrir le projet</a>
+          </div>
+          <p class="hero-note">À ton rythme. Sans jugement. Sans pression.</p>
+        </div>
+        <div class="hero-art" role="img" aria-label="Statue classique d'ange dans une atmosphère sombre">
+          <div class="art-glow"></div>
+          <div class="art-caption">PRENDS LE TEMPS<br>DE TE RENCONTRER</div>
+        </div>
+      </section>
+
+      <section class="pillars wrap" id="about">
+        <article class="pillar"><span class="pillar-icon">⌁</span><h3>Ton état actuel</h3><p>Un questionnaire pour mettre des mots sur ton ressenti.</p></article>
+        <article class="pillar"><span class="pillar-icon">◎</span><h3>Des objectifs clairs</h3><p>Définis ce que tu souhaites améliorer et atteindre.</p></article>
+        <article class="pillar"><span class="pillar-icon">▤</span><h3>Ton journal</h3><p>Écris librement tes pensées, tes doutes et tes progrès.</p></article>
+        <article class="pillar"><span class="pillar-icon">↗</span><h3>Ton évolution</h3><p>Observe tes changements au fil du temps, sans comparaison.</p></article>
+      </section>
+
+      <section class="home-next wrap">
+        <div><p class="eyebrow">LE PARCOURS</p><h2>Commencer par se comprendre.</h2><p>Un premier temps pour faire le point, puis un second pour imaginer la suite.</p></div>
+        <button class="btn btn-cream" data-action="start-global">Commencer le test <span>→</span></button>
+      </section>
+      <section class="quote-band wrap"><span class="quote-mark">“</span><p>Tu n’as pas besoin d’avoir toutes les réponses aujourd’hui.<br><em>Tu peux simplement commencer par t’écouter.</em></p><span class="quote-star">✦</span></section>
+    </section>
+
+    <section class="view wrap" id="view-questionnaires">
+      <div class="page-heading"><p class="eyebrow">PRENDRE UN MOMENT POUR SOI</p><h2>Les questionnaires</h2><p>Deux étapes complémentaires : comprendre ton présent, puis réfléchir à la suite.</p></div>
+      <div class="questionnaire-cards">
+        <article class="feature-card featured"><span class="card-index">01 / COMPRENDRE</span><h3>Comment vas-tu réellement ?</h3><p>Explore ton état émotionnel, ton énergie, tes pensées, tes relations et ton rapport à toi-même.</p><div class="card-meta">30 questions · 10 à 15 min</div><button class="btn btn-cream" data-action="start-q1">Commencer le questionnaire <span>→</span></button></article>
+        <article class="feature-card"><span class="card-index">02 / AVANCER</span><h3>Où veux-tu aller ?</h3><p>Clarifie tes envies, choisis des objectifs réalistes et identifie un premier pas qui te ressemble.</p><div class="card-meta">10 questions · à ton rythme</div><button class="btn btn-outline" data-action="start-q2">Découvrir le questionnaire <span>→</span></button></article>
+      </div>
+      <p class="small-note">Tu peux passer une question ou faire une pause. Les questionnaires sont des outils de réflexion, pas des tests médicaux.</p>
+    </section>
+
+    <section class="view wrap" id="view-test">
+      <div class="test-shell">
+        <div class="test-top"><button class="text-btn" data-action="exit-test">← Quitter</button><span id="test-kind">QUESTIONNAIRE 01</span><button class="text-btn" data-action="save-exit">Enregistrer & quitter</button></div>
+        <div class="progress-info"><span id="progress-label">QUESTION 1 SUR 30</span><strong id="progress-percent">0 %</strong></div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="question-area">
+          <p class="eyebrow" id="question-category">ÉTAT ÉMOTIONNEL</p>
+          <h2 id="question-text">Ces derniers temps, est-ce que tu te sens heureux dans ta vie ?</h2>
+          <p class="question-hint" id="question-hint">Réponds en pensant aux 14 derniers jours. Il n’y a pas de bonne ou de mauvaise réponse.</p>
+          <div class="answer-list" id="answerList"></div>
+          <textarea id="openAnswer" class="open-answer hidden" placeholder="Écris librement, si tu en as envie…" rows="4"></textarea>
+        </div>
+        <div class="test-footer"><button class="btn btn-outline" id="prevQuestion">Précédent</button><button class="btn btn-cream" id="nextQuestion" disabled>Continuer <span>→</span></button></div>
+        <p class="test-footnote">Tes réponses sont enregistrées sur cet appareil dans cette version de démonstration.</p>
+      </div>
+    </section>
+
+    <section class="view wrap" id="view-results">
+      <div class="page-heading result-heading"><p class="eyebrow">MON BILAN GLOBAL</p><h2>Ton profil actuel<span class="title-period">.</span></h2><p>Une lecture personnalisée de tes réponses, pour t'aider à y voir plus clair.</p></div>
+      <div id="emptyResults" class="empty-state"><span>✦</span><h3>Ton bilan t'attend.</h3><p>Termine le premier questionnaire pour découvrir les tendances qui ressortent de tes réponses.</p><button class="btn btn-cream" data-action="start-q1">Commencer le questionnaire <span>→</span></button></div>
+      <div id="resultContent" class="hidden">
+        <div class="profile-card">
+          <div class="profile-symbol">✧</div><div class="profile-copy"><p class="eyebrow">TON PROFIL DESCRIPTIF</p><h3 id="profileTitle">En questionnement</h3><p id="profileDescription"></p></div>
+          <div class="balance"><strong id="balanceValue">—</strong><span>indice descriptif<br>de réponses positives</span></div>
+        </div>
+        <div class="section-title-row"><h3>Détail de tes réponses</h3><span>PAR DOMAINE</span></div>
+        <div class="score-grid" id="scoreGrid"></div>
+        <div class="insight-grid"><article class="insight-card"><p class="eyebrow">CE SUR QUOI TU PEUX T'APPUYER</p><h3>Tes ressources</h3><ul id="strengthList"></ul></article><article class="insight-card"><p class="eyebrow">TES PISTES DE RÉFLEXION</p><h3>À explorer à ton rythme</h3><ul id="growthList"></ul></article></div>
+        <article class="personal-message"><p class="eyebrow">UN MESSAGE POUR TOI</p><h3 id="messageTitle">Continue à ton rythme.</h3><p id="personalMessage"></p></article>
+        <article class="personal-message plan-message hidden" id="personalPlan"><p class="eyebrow">TON PLAN PERSONNEL</p><h3>La direction que tu souhaites prendre.</h3><div id="planDetails" class="plan-details"></div></article>
+        <div class="result-actions"><button class="btn btn-cream" data-action="start-q2">Construire mon plan d'évolution <span>→</span></button><button class="btn btn-outline" data-action="print-results">Imprimer ma fiche</button></div>
+        <p class="small-note">Ce bilan est une synthèse indicative de tes réponses, pas un diagnostic ni une mesure de ta santé mentale. Il ne définit pas ta valeur.</p>
+      </div>
+    </section>
+
+    <section class="view wrap" id="view-journal">
+      <div class="page-heading"><p class="eyebrow">UN ESPACE PERSONNEL</p><h2>Mon journal</h2><p>Tu peux déposer ici ce que tu as envie de garder, sans avoir à le formuler parfaitement.</p></div>
+      <div class="journal-layout">
+        <form class="journal-form" id="journalForm"><label for="journalTitle">Titre de ton entrée</label><input id="journalTitle" maxlength="80" placeholder="Un moment, une pensée…"><label for="journalBody">Ce que tu souhaites écrire</label><textarea id="journalBody" rows="8" placeholder="Prends ton temps. Cet espace est à toi."></textarea><button class="btn btn-cream" type="submit">Enregistrer cette pensée <span>→</span></button><p class="small-note">Les entrées sont conservées localement sur cet appareil.</p></form>
+        <div class="journal-entries"><div class="section-title-row"><h3>Mes écrits</h3><span id="journalCount">0 ENTRÉE</span></div><div id="journalList" class="entry-list"></div></div>
+      </div>
+    </section>
+
+    <section class="view wrap" id="view-evolution">
+      <div class="page-heading"><p class="eyebrow">PETITS PAS, GRAND CHEMIN</p><h2>Mon évolution</h2><p>Une progression personnelle ne suit pas une ligne droite. Ici, tu avances à ton rythme.</p></div>
+      <div class="evolution-grid"><article class="feature-card"><p class="eyebrow">MON PROCHAIN PAS</p><h3>Un objectif à la fois.</h3><p>Choisis une action simple et réaliste. Tu pourras la modifier quand tes besoins évolueront.</p><form id="goalForm" class="goal-form"><input id="goalInput" maxlength="120" placeholder="Ex. prendre 10 minutes pour moi"><button class="btn btn-cream" type="submit">Ajouter l'objectif</button></form></article><article class="feature-card progress-card"><p class="eyebrow">MON PARCOURS</p><h3 id="journeyStatus">Ton parcours commence ici.</h3><div class="mini-progress"><span id="journeyBar"></span></div><p id="journeyText">Les étapes terminées apparaîtront ici.</p></article></div>
+      <div class="section-title-row"><h3>Mes objectifs</h3><span id="goalCount">0 OBJECTIF</span></div><div id="goalList" class="goal-list"></div>
+      <div class="section-title-row"><h3>Mon historique</h3><span>TES BILANS</span></div><div id="historyList" class="history-list"><p class="muted">Tes bilans terminés apparaîtront ici.</p></div>
+    </section>
+
+    <section class="view wrap" id="view-account">
+      <div class="page-heading"><p class="eyebrow">TON ESPACE</p><h2>Un espace à ton image.</h2><p>Tu peux utiliser FACE TO YOU sans compte. Cette version conserve tes données sur ton appareil.</p></div>
+      <div class="account-panel"><div class="profile-symbol">♙</div><div><h3 id="accountHeading">Continuer sans compte</h3><p id="accountDescription">Un profil local facultatif permet simplement de personnaliser ton accueil sur cet appareil.</p></div><form id="profileForm"><label for="displayName">Comment souhaites-tu être appelé ? (facultatif)</label><input id="displayName" maxlength="40" placeholder="Ton prénom ou pseudo"><button class="btn btn-cream" type="submit">Enregistrer mon prénom</button></form><button class="text-btn danger" data-action="reset-data">Supprimer mes données locales</button></div>
+      <p class="small-note">Aucun compte en ligne ni synchronisation cloud n'est activé dans cette première version. Ne saisis pas d'informations très sensibles dans cette démonstration.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-star">✦</span> FACE TO YOU<span class="brand-dot">.</span></a><p>Apprends à te comprendre. Avance à ton rythme.</p><span>© <span id="year"></span> FACE TO YOU</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
